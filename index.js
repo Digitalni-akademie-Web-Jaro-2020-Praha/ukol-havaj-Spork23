@@ -7,7 +7,7 @@ let osoba2 = {
   uspory: 68000
 };
 
-const trip = (ideme) => {
+const trip = () => {
   if (osoba1.uspory + osoba2.uspory >= 100000 && osoba1.uspory >= 50000 && osoba2.uspory >= 50000) {
     console.log("Možete íst na výlet, jupí, balte kufre :D! Obe máte dosť nasporené! ");
   }
@@ -28,6 +28,8 @@ const trip = (ideme) => {
   else if (osoba1.uspory + osoba2.uspory < 100000 && osoba1.uspory < 50000 && osoba2.uspory < 50000) {
     console.log(`Ešte obe trochu pošetrite. ${osoba1.jmeno}, musíš ešte našetriť ${50000 - osoba1.uspory} Kčs. A ty ${osoba2.jmeno}, ty musíš našetriť ${50000 - osoba2.uspory} Kčs.`)
   }
-}
+};
 
 //viem, že mi tam sklonovanie nepasuje resp karolíne miesto karolíny, ale nevedela som aku tú vetu inak postavit.
+
+trip();
